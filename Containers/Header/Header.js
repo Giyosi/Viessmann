@@ -4,14 +4,14 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faHome, faSearch } from "@fortawesome/free-solid-svg-icons"
 
-
-const Header = () => {
+const Header = ({ theme }) => {
+    console.log(theme)
     return (
         <HeaderWrapper>
             <div className="d-flex justify-content-between align-items-center me-5 px-5">
                 <img className="logo" src="https://viessmann.vercel.app/images/viessman%20logo.png" alt="" />
                 <div className="d-flex">
-                    <ul className="d-flex me-3">
+                    <ul className="d-flex me-3 align-items-center">
                         {data.map((v, i) => {
                             return (<li className="me-4">
                                 <Link href={v.href}><a className="text-white"><FontAwesomeIcon icon={v.icon} className="me-1" />{v.title}</a></Link>
@@ -19,12 +19,11 @@ const Header = () => {
                             )
                         })}
                     </ul>
-                    <FontAwesomeIcon icon={faSearch} className="me-3 text-white" />
-                    <FontAwesomeIcon icon={faBars} className="ms-3 text-white" />
+                    <button className="btn btn-danger me-3"><FontAwesomeIcon icon={faSearch} className="text-white" /></button>
+                    <button className="btn btn-danger" onClick={theme}>   <FontAwesomeIcon icon={faBars} className="text-white" /></button>
                 </div>
             </div>
         </HeaderWrapper>
     )
 }
-
-export default Header
+export default Header;
