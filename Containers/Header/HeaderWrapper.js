@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeaderWrapper = styled.div`
+const HeaderWrapper = styled.div`
     background-color: red;
     z-index: 100;
     position: fixed;
@@ -12,3 +12,5 @@ export const HeaderWrapper = styled.div`
         height: 30px;
     }
 `;
+
+export default HeaderWrapper;

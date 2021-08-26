@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-export const lightTheme = {
+const lightTheme = {
     body: '#FFF',
     text: '#363537',
     toggleBorder: '#FFF',
@@ -8,14 +8,14 @@ export const lightTheme = {
     greenColor : "#888"
 }
 
-export const darkTheme = {
+const darkTheme = {
     body: '#363537',
     text: '#FAFAFA',
     toggleBorder: '#6B8096',
     background: '#999',
     greenColor : "rgba(0,49,255,1)"
 }
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
     body {
         margin: 0;
         padding: 0;
@@ -92,4 +92,4 @@ export const GlobalStyle = createGlobalStyle`
     }
 `;
 
-
+export {GlobalStyle, darkTheme, lightTheme};

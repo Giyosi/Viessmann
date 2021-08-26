@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
-export const FooterWrapper = styled.div`
+const FooterWrapper = styled.div`
 
 `;
+
+export default FooterWrapper;

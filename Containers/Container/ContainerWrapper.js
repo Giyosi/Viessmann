@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContainerWrapper = styled.div`
+const ContainerWrapper = styled.div`
     padding: 50px 0;
     .home {
         object-fit: cover;
@@ -8,3 +8,5 @@ export const ContainerWrapper = styled.div`
         top: 50px;
     }
 `;
+
+export default ContainerWrapper;
