@@ -1,26 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
-const lightTheme = {
-    body: '#FFF',
-    text: '#363537',
-    toggleBorder: '#FFF',
-    background: '#363537',
-    greenColor : "#888"
-}
 
-const darkTheme = {
-    body: '#363537',
-    text: '#FAFAFA',
-    toggleBorder: '#6B8096',
-    background: '#999',
-    greenColor : "rgba(0,49,255,1)"
-}
 const GlobalStyle = createGlobalStyle`
     body {
         margin: 0;
         padding: 0;
         font-family: sans-serif;
-        background-color: ${({ theme }) => theme.body};
     }
     *{
         box-sizing: border-box;
@@ -48,7 +33,6 @@ const GlobalStyle = createGlobalStyle`
             .card {
                 border-radius: 10px;
                 margin-top: 20%;
-                color: ${({theme}) => theme.text};
                 background: #00000099;
                 .button{
                     width: 120px;
@@ -83,13 +67,10 @@ const GlobalStyle = createGlobalStyle`
             overflow: hidden;
         }
     }
-.card_title {
-    color: ${({theme}) => theme.greenColor};
-}
 
     footer {
         min-height: 300px;
     }
 `;
 
-export {GlobalStyle, darkTheme, lightTheme};
+export default GlobalStyle;

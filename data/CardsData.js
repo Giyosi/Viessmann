@@ -1,4 +1,4 @@
-const data = [
+const CardsData = [
     {
         img: "https://viessmann.vercel.app/images/menu1.jpg",
         title: "Для жилья",
@@ -25,4 +25,4 @@ const data = [
     },
 ]
 
-export default data;
+export default CardsData;

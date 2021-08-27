@@ -1,8 +1,8 @@
-import { data } from "../../data/Pages"
-import { HeaderWrapper } from "./HeaderWrapper"
+import HeaderWrapper from "./HeaderWrapper"
 import Link from 'next/link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faHome, faSearch } from "@fortawesome/free-solid-svg-icons"
+import { headerData } from "../../data/Pages";
 
 const Header = ({ theme }) => {
     console.log(theme)
@@ -12,8 +12,8 @@ const Header = ({ theme }) => {
                 <img className="logo" src="https://viessmann.vercel.app/images/viessman%20logo.png" alt="" />
                 <div className="d-flex">
                     <ul className="d-flex me-3 align-items-center">
-                        {data.map((v, i) => {
-                            return (<li className="me-4">
+                        {headerData.map((v, i) => {
+                            return (<li key={i} className="me-4">
                                 <Link href={v.href}><a className="text-white"><FontAwesomeIcon icon={v.icon} className="me-1" />{v.title}</a></Link>
                             </li>
                             )

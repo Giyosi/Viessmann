@@ -1,6 +1,6 @@
 import { faAddressBook, faBuilding, faCopy, faHome, faTools, faWrench } from "@fortawesome/free-solid-svg-icons";
 
-const data = [
+const headerData = [
     { title: "Главная", icon: faHome, href: "/" },
     { title: "Продукты", icon: faTools, href: "/products" },
     { title: "Прием заявок", icon: faCopy, href: "/applications" },
@@ -10,4 +10,4 @@ const data = [
 
 ]
 
-export default data;
+export  {headerData};

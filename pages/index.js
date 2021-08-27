@@ -111,7 +111,7 @@ const Home = () => {
         <div className="container">
           <div className="row">
             {card3.map((v, i) => {
-              return <div  key={v.title} className="col-sm-6 col-md-4 col-lg-3 mb-3" style={{ height: " 400px" }}>
+              return <div key={i} className="col-sm-6 col-md-4 col-lg-3 mb-3" style={{ height: " 400px" }}>
                 <div className="p-0 pb-3 h-100 rounded-3 shadow overflow-hidden">
                   <img className="w-100 h-50" src={v.img} alt="" />
                   <div className="text-center h-50 d-flex flex-column justify-content-around py-3">
@@ -125,9 +125,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <footer className="bg-dark mt-5">
-
-      </footer>
+      
     </Container>
   )
 }
