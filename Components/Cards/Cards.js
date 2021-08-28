@@ -10,7 +10,7 @@ const Cards = () => {
                         return <div key={i} className="col-sm-6 col-md-4 col-lg-3">
                             <div className="cards">
                                 <img className=" w-100 h-100" src={v.img} alt="" />
-                                <div className="cardsText text-white p-2">
+                                <div className="cardsText text-white">
                                     <h3>{v.title}</h3>
                                     <p>{v.subtitle}</p>
                                 </div>
