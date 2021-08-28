@@ -1,5 +1,5 @@
 import CardsData from "../../data/CardsData";
-import CardsWrapper from "./CardsWrapper"
+import CardsWrapper from "../../Wrappers/CardsWrapper";
 
 const Cards = () => {
     return (

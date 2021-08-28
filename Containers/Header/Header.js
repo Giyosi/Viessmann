@@ -1,14 +1,14 @@
 import HeaderWrapper from "./HeaderWrapper"
 import Link from 'next/link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars, faHome, faSearch } from "@fortawesome/free-solid-svg-icons"
-import { headerData } from "../../data/Pages";
+import { faBars, faSearch } from "@fortawesome/free-solid-svg-icons"
+import { headerData } from "../../data/HeaderData";
 
 const Header = ({ theme }) => {
     console.log(theme)
     return (
         <HeaderWrapper>
-            <div className="d-flex justify-content-between align-items-center me-5 px-5">
+            <div className="d-flex justify-content-between align-items-center shadow py-3 px-5">
                 <img className="logo" src="https://viessmann.vercel.app/images/viessman%20logo.png" alt="" />
                 <div className="d-flex">
                     <ul className="d-flex me-3 align-items-center">
